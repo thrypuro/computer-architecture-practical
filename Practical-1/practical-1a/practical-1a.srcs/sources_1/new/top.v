@@ -23,11 +23,14 @@
 module top(
     input x,
     input y,
-    output xx,
-    output yy,
-    output z
+    input a,
+    input b,
+    input c_in,
+    output z,
+    output sum,
+    output c_out
     );
-assign xx=x;
-assign yy=y;
+     assign sum = a^b^c_in;
+assign c_out = (a && b) || (c_in && b) || (a && c_in);
 assign z=x^y;
 endmodule
