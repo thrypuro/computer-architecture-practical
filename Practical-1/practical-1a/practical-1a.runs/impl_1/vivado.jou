@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2021.1 (64-bit)
-# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon Sep 27 17:42:23 2021
-# Process ID: 461653
-# Current directory: /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/CARD-practicals/Practical-0/practical-1a/practical-1a.runs/impl_1
-# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/CARD-practicals/Practical-0/practical-1a/practical-1a.runs/impl_1/top.vdi
-# Journal file: /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/CARD-practicals/Practical-0/practical-1a/practical-1a.runs/impl_1/vivado.jou
+# Start of session at: Tue Sep 28 01:13:40 2021
+# Process ID: 68
+# Current directory: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/impl_1/top.vdi
+# Journal file: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

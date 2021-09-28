@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/CARD-practicals/Practical-0/top.xdc rfile:../../../../top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1/top.xdc rfile:../../../../top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33 } [get_ports { xx }]; #IO_L6N_T0_VREF_34 Sch=led[0]
 set_property src_info {type:XDC file:1 line:28 export:INPUT save:INPUT read:READ} [current_design]
