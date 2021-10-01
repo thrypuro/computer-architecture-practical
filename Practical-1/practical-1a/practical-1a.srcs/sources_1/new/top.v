@@ -23,14 +23,21 @@
 module top(
     input x,
     input y,
-    input a,
-    input b,
-    input c_in,
-    output z,
-    output sum,
-    output c_out
+    input wire A,
+input wire B,
+input wire Cin,
+output wire Sum,
+output wire Cout,
+    output z
     );
-     assign sum = a^b^c_in;
-assign c_out = (a && b) || (c_in && b) || (a && c_in);
+
+fulladder1 u_fulladder(.A (A),
+.B (B),
+.Cin (Cin),
+.Sum (Sum),
+.Cout (Cout)
+);
+
 assign z=x^y;
 endmodule
+

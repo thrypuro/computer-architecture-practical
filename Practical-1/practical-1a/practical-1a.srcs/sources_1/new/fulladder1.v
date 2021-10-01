@@ -21,13 +21,13 @@
 
 
 module fulladder1(
-    input a,
-    input b,
-    input c_in,
-    output sum,
-    output c_out
+    input A,
+    input B,
+    input Cin,
+    output Sum,
+    output Cout
     );
-    assign sum = a^b^c_in;
-assign c_out = (a && b) || (c_in && b) || (a && c_in);
+    assign Sum = A^B^Cin;
+assign Cout = (A && B) || (Cin && B) || (A && Cin);
 
 endmodule

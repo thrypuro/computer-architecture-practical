@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/impl_1/top.tcl"
+  variable script "C:/Users/madha/OneDrive/Desktop/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -126,7 +126,7 @@ set rc [catch {
   set_param chipscope.maxJobs 1
   set_param xicom.use_bs_reader 1
   open_checkpoint top_routed.dcp
-  set_property webtalk.parent_dir /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1/practical-1a/practical-1a.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/madha/OneDrive/Desktop/computer-architecture-practical/Practical-1/practical-1a/practical-1a.cache/wt [current_project]
 set_property TOP top [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
