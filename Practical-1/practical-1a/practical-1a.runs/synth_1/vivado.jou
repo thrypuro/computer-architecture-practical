@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2021.1 (64-bit)
-# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Sep 29 15:13:25 2021
-# Process ID: 8148
-# Current directory: C:/Users/madha/OneDrive/Desktop/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/synth_1
-# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/madha/OneDrive/Desktop/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/synth_1/top.vds
-# Journal file: C:/Users/madha/OneDrive/Desktop/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/synth_1\vivado.jou
+# Start of session at: Fri Oct  1 16:29:30 2021
+# Process ID: 80493
+# Current directory: /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/synth_1/top.vds
+# Journal file: /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1/practical-1a/practical-1a.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

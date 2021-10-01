@@ -21,23 +21,34 @@
 
 
 module top(
-    input x,
-    input y,
+    input clock,
+    input reset,
     input wire A,
 input wire B,
 input wire Cin,
-output wire Sum,
-output wire Cout,
-    output z
+output reg Sum,
+output reg Cout
     );
-
-fulladder1 u_fulladder(.A (A),
+wire D1;
+wire D2;
+fulladder1 u_fulladder( .A (A),
 .B (B),
 .Cin (Cin),
-.Sum (Sum),
-.Cout (Cout)
+.Sum (D1),
+.Cout (D2)
 );
-
-assign z=x^y;
+always @(posedge clock or posedge reset)
+begin
+  if (reset==1'b1)
+   begin
+     Sum <=  1'b0;
+     Cout <=1'b0;
+    end
+  else
+    begin
+     Sum <= D1;
+     Cout <=D2;
+    end
+end
 endmodule
 
