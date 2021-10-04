@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Oct  4 18:29:27 2021
+# Process ID: 238787
+# Current directory: /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.runs/synth_1
+# Command line: vivado -log alu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu.tcl
+# Log file: /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.runs/synth_1/alu.vds
+# Journal file: /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source alu.tcl -notrace

@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+!! Test failure at cycle 1, DUT output = 00000000, should be 00000001
+$finish called at time : 30 ns : File "/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/src/sim/tb.v" Line 246
