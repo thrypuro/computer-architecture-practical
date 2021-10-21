@@ -30,7 +30,7 @@ module tb;
 // This should be at least 1000 times the number of instruction types included
 // in the simulation. Hence, for your final run this should be set to 10000.
 //
-localparam NUM_CYCLES    = 1000;     // set the number of iterations of the test
+localparam NUM_CYCLES    = 10000;     // set the number of iterations of the test
 //
 // You can enable or disable each of four groups of instructions. The groups
 // are:
@@ -48,9 +48,9 @@ localparam NUM_CYCLES    = 1000;     // set the number of iterations of the test
 // random mixture of instructions from all of the enabled groups.
 //
 localparam ENABLE_LOGIC  = 1;        // set to 1 to enable testing of AND/OR/XOR
-localparam ENABLE_ADD    = 0;        // set to 1 to enable testing of ADD/SUB
-localparam ENABLE_SET    = 0;        // set to 1 to enable testing of SLT/SLTU
-localparam ENABLE_SHIFTS = 0;        // set to 1 to enable SLL/SRL/SRA
+localparam ENABLE_ADD    = 1;        // set to 1 to enable testing of ADD/SUB
+localparam ENABLE_SET    = 1;        // set to 1 to enable testing of SLT/SLTU
+localparam ENABLE_SHIFTS = 1;        // set to 1 to enable SLL/SRL/SRA
 
 //==============================================================================
 // You do not need to change anything below this line.
@@ -241,6 +241,8 @@ always @(negedge clk)
   begin
   if (dut_error == 1'b1)
     begin
+    $display((exe_src2_r));
+    $display(exe_reg1_r);
     $display("!! Test failure at cycle %0d, DUT output = %08x, should be %08x",
              cycles, dut_alu_result, ref_alu_result);
     $finish;

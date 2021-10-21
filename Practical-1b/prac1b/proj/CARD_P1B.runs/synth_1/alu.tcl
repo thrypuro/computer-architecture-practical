@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.runs/synth_1/alu.tcl"
+  variable script "C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.runs/synth_1/alu.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,25 +70,31 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param synth.incrementalSynthesisCache C:/Users/madha/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7708-DESKTOP-M660UKK/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.cache/wt [current_project]
-set_property parent.project_path /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.cache/wt [current_project]
+set_property parent.project_path C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/repo/board_files} [current_project]
+set_property board_part_repo_paths {C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/repo/board_files} [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
-set_property ip_output_repo /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.cache/ip [current_project]
+set_property ip_output_repo c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.srcs/sources_1/new/test.v
-  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/src/hdl/alu.v
+  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.srcs/sources_1/new/alu_adder.v
+  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.srcs/sources_1/new/alu_arith_shift_right.v
+  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/src/hdl/alu.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -99,11 +105,11 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/src/constraints/timing.xdc
-set_property used_in_implementation false [get_files /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/src/constraints/timing.xdc]
+read_xdc C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/src/constraints/timing.xdc
+set_property used_in_implementation false [get_files C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/src/constraints/timing.xdc]
 
-read_xdc /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/src/constraints/pynq-z2_v1.0.xdc
-set_property used_in_implementation false [get_files /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/src/constraints/pynq-z2_v1.0.xdc]
+read_xdc C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/src/constraints/pynq-z2_v1.0.xdc
+set_property used_in_implementation false [get_files C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/src/constraints/pynq-z2_v1.0.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

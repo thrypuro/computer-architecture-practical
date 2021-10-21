@@ -6,10 +6,14 @@
 # Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/opt/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2021.1/bin
+  PATH=D:/Xilinix/Vivado/2021.1/ids_lite/ISE/bin/nt64;D:/Xilinix/Vivado/2021.1/ids_lite/ISE/lib/nt64:D:/Xilinix/Vivado/2021.1/bin
 else
-  PATH=/opt/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2021.1/bin:$PATH
+  PATH=D:/Xilinix/Vivado/2021.1/ids_lite/ISE/bin/nt64;D:/Xilinix/Vivado/2021.1/ids_lite/ISE/lib/nt64:D:/Xilinix/Vivado/2021.1/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.runs/synth_1'
+HD_PWD='C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/proj/CARD_P1B.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
