@@ -1,5 +1,5 @@
 # Define the clock period - this value can be adjusted
-set CLOCK_PERIOD      7
+set CLOCK_PERIOD      10
 
 # Create clock and set jitter and uncertainty to be ideal
 create_clock -name CLK -period $CLOCK_PERIOD [get_ports clk]

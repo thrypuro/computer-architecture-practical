@@ -36,71 +36,34 @@ module regfile(
 
 
 // Implement your design here...
-  reg [31:0] r [0:31]; // array of 32 registers 
+  reg [31:0] r_reg [0:31]; // array of 32 registers 
   integer i;
   initial 
   begin
-    i =0;
-    rdata1 =32'b0;
-    rdata2 =32'b0;
-    
-    for(i=0;i<32;i=i+1)
-     begin
-     r[i] = 32'b0;// initialise all registers to be 0
-     end 
-  end
+     r_reg[0] <= 0;r_reg[1] <= 0;r_reg[2] <= 0;r_reg[3] <= 0;r_reg[4] <= 0;r_reg[5] <= 0;r_reg[6] <= 0;r_reg[7] <= 0;r_reg[8] <= 0;r_reg[9] <= 0;r_reg[10] <= 0;r_reg[11] <= 0;r_reg[12] <= 0;r_reg[13] <= 0;r_reg[14] <= 0;r_reg[15] <= 0;r_reg[16] <= 0;r_reg[17] <= 0;r_reg[18] <= 0;r_reg[19] <= 0;r_reg[20] <= 0;r_reg[21] <= 0;r_reg[22] <= 0;r_reg[23] <= 0;r_reg[24] <= 0;r_reg[25] <= 0;r_reg[26] <= 0;r_reg[27] <= 0;r_reg[28] <= 0;r_reg[29] <= 0;r_reg[30] <= 0;r_reg[31] <= 0;    
+   end
+
   
   always @(posedge clk or posedge reset)
    begin
-   r[0] = 32'b0;
+   r_reg[0] <= 32'b0;
    if(reset==1)
     begin
-      rdata1 <=32'b0;
-      rdata2 <=32'b0;
-      for(i=0;i<32;i=i+1)
-       begin
-        r[i] <= 32'b0; //  all registers set to be 0
-       end
-    end
+      r_reg[0] <= 0;r_reg[1] <= 0;r_reg[2] <= 0;r_reg[3] <= 0;r_reg[4] <= 0;r_reg[5] <= 0;r_reg[6] <= 0;r_reg[7] <= 0;r_reg[8] <= 0;r_reg[9] <= 0;r_reg[10] <= 0;r_reg[11] <= 0;r_reg[12] <= 0;r_reg[13] <= 0;r_reg[14] <= 0;r_reg[15] <= 0;r_reg[16] <= 0;r_reg[17] <= 0;r_reg[18] <= 0;r_reg[19] <= 0;r_reg[20] <= 0;r_reg[21] <= 0;r_reg[22] <= 0;r_reg[23] <= 0;r_reg[24] <= 0;r_reg[25] <= 0;r_reg[26] <= 0;r_reg[27] <= 0;r_reg[28] <= 0;r_reg[29] <= 0;r_reg[30] <= 0;r_reg[31] <= 0;    end
    else
     begin
      if(wenb && rd!=0) 
       begin
-       r[rd] <= wdata;
+       r_reg[rd] <= wdata;
       end
     end
    end
    always @*
      begin
-      if( rs1==32'b0)
-       begin
-        rdata1 <=32'b0;
-       end
-      else if(renb1)
-       begin
-        rdata1 <= r[rs1];
-       end
-       else 
-        begin
-         rdata1 <=32'b0;
-        end
-      
+      rdata1 =(renb1!=0)?r_reg[rs1] :32'b0;
+      rdata2 =(renb2!=0)?r_reg[rs2] :32'b0;
      end
-    always @*
-      begin
-      if( rs2==32'b0)
-       begin
-        rdata2 <=32'b0;
-       end
-       else if(renb2)
-        begin
-         rdata2 <= r[rs2];
-        end
-       else 
-        begin
-         rdata2 <=32'b0;
-        end
-      end
+    
     
    
 endmodule
