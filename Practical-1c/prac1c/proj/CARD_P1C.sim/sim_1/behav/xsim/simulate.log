@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Starting test of Regfile for 10000 random R/W cycles:
+Your Register File passed 10000 random test cycles
+Congratulations, your Register File is verified!
+$finish called at time : 102995 ns : File "C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/sim/tb.v" Line 179

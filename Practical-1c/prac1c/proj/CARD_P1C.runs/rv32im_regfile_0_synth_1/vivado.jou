@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Oct 21 22:28:45 2021
+# Process ID: 12404
+# Current directory: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/proj/CARD_P1C.runs/rv32im_regfile_0_synth_1
+# Command line: vivado.exe -log rv32im_regfile_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rv32im_regfile_0.tcl
+# Log file: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/proj/CARD_P1C.runs/rv32im_regfile_0_synth_1/rv32im_regfile_0.vds
+# Journal file: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/proj/CARD_P1C.runs/rv32im_regfile_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rv32im_regfile_0.tcl -notrace

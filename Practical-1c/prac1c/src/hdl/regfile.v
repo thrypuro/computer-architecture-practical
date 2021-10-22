@@ -36,5 +36,71 @@ module regfile(
 
 
 // Implement your design here...
+  reg [31:0] r [0:31]; // array of 32 registers 
+  integer i;
+  initial 
+  begin
+    i =0;
+    rdata1 =32'b0;
+    rdata2 =32'b0;
+    
+    for(i=0;i<32;i=i+1)
+     begin
+     r[i] = 32'b0;// initialise all registers to be 0
+     end 
+  end
   
+  always @(posedge clk or posedge reset)
+   begin
+   r[0] = 32'b0;
+   if(reset==1)
+    begin
+      rdata1 <=32'b0;
+      rdata2 <=32'b0;
+      for(i=0;i<32;i=i+1)
+       begin
+        r[i] <= 32'b0; //  all registers set to be 0
+       end
+    end
+   else
+    begin
+     if(wenb && rd!=0) 
+      begin
+       r[rd] <= wdata;
+      end
+    end
+   end
+   always @*
+     begin
+      if( rs1==32'b0)
+       begin
+        rdata1 <=32'b0;
+       end
+      else if(renb1)
+       begin
+        rdata1 <= r[rs1];
+       end
+       else 
+        begin
+         rdata1 <=32'b0;
+        end
+      
+     end
+    always @*
+      begin
+      if( rs2==32'b0)
+       begin
+        rdata2 <=32'b0;
+       end
+       else if(renb2)
+        begin
+         rdata2 <= r[rs2];
+        end
+       else 
+        begin
+         rdata2 <=32'b0;
+        end
+      end
+    
+   
 endmodule
