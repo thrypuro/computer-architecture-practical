@@ -20,18 +20,18 @@
 // from Practical 1.(b), if you want to use your own module (which you should,
 // if possible).
 //
-`define           ALU_MODULE         rv32im_alu_0
+`define           ALU_MODULE         alu
 
 // Set the REGFILE_MODULE macro to the name of your register file module
 // (e.g. regfile) from Practical 1.(c), if you want to use your own module
 // (which you should if possible).
 //
-`define           REGFILE_MODULE     rv32im_regfile_0
+`define           REGFILE_MODULE     regfile
 
 // Set the HEX_FILE localparam to the name of the hex file containing the test
 // program (deps_test.hex) or the Mandlebrot benchmark program (mbrot.hex)
-//
-localparam        HEX_FILE         = "deps_test.hex";
+// 
+localparam        HEX_FILE         = "mbrot.hex";
 
 
 // ============== Do not edit any definitions below this line ==================

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CARD_P1D.ip_user_files/ipstatic/src/ClockGen.vhd" \
+"../../../../CARD_P1D.ip_user_files/ipstatic/src/SyncAsync.vhd" \
+"../../../../CARD_P1D.ip_user_files/ipstatic/src/SyncAsyncReset.vhd" \
+"../../../../CARD_P1D.ip_user_files/ipstatic/src/DVI_Constants.vhd" \
+"../../../../CARD_P1D.ip_user_files/ipstatic/src/OutputSERDES.vhd" \
+"../../../../CARD_P1D.ip_user_files/ipstatic/src/TMDS_Encoder.vhd" \
+"../../../../CARD_P1D.ip_user_files/ipstatic/src/rgb2dvi.vhd" \
+"../../../../../src/ip/rgb2dvi_0/sim/rgb2dvi_0.vhd" \
+
+# Do not sort compile order
+nosort

@@ -2,7 +2,7 @@
 2020.2
 Jun 10 2021
 20:04:57
-C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/proj/CARD_P1C.sim/sim_1/behav/xsim/glbl.v,1634862681,verilog,,,,glbl,,,,,,,,
-C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/hdl/regfile.v,1634865740,verilog,,C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/sim/tb.v,,regfile,,,../../../../../src/inc,,,,,
+C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/proj/CARD_P1C.gen/sources_1/ip/rv32im_regfile_0/rv32im_regfile_0_sim_netlist.v,1634862681,verilog,,C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/hdl/regfile.v,,glbl;rv32im_regfile_0;rv32im_regfile_0_regfile,,,../../../../../src/inc,,,,,
+C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/hdl/regfile.v,1634866389,verilog,,C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/sim/tb.v,,regfile,,,../../../../../src/inc,,,,,
 C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/inc/params.v,1634862682,verilog,,,,,,,,,,,,
 C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/sim/tb.v,1634862682,verilog,,,C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/inc/params.v,tb,,,../../../../../src/inc,,,,,

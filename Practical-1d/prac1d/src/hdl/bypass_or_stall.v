@@ -58,21 +58,63 @@ module bypass_or_stall(
 
 always @*
   begin : bypass_stall_PROC
-
+   dec_stall = 0;
+   dec_rs1_data    = dec_rdata1;
+  dec_rs2_data    = dec_rdata2;
   //===========================================================================
   // Your Parts (a) and (b) will totally replace the next three lines of code
   //
-  dec_stall       = 1'b0 & wrb_rd_wenb; // this is just to assign a value
-  dec_load_use    = 1'b0 & wrb_rd_wenb; // this is just to assign a value
-  dec_csr_use     = 1'b0 & wrb_rd_wenb; // this is just to assign a value
+   if((dec_rs1==wrb_rd)&&wrb_rd_wenb&&dec_rs1_renb)
+     begin
+      dec_rs1_data = wrb_result;
+     end
+     if((dec_rs2==wrb_rd)&&wrb_rd_wenb&&dec_rs2_renb)
+     begin
+      dec_rs2_data = wrb_result;
+     end
+    
+    if((dec_rs1==mem_rd)&&mem_rd_wenb&&dec_rs1_renb)
+     begin
+      dec_rs1_data = mem_result;
+     end
+     if((dec_rs2==mem_rd)&&mem_rd_wenb&&dec_rs2_renb)
+     begin
+      dec_rs2_data = mem_result;
+     end
+    
+     if((dec_rs1==exe_rd)&&exe_rd_wenb&&dec_rs1_renb)
+   begin
+    if(exe_load)
+     begin
+      dec_stall = 1;
+     end
+     else
+      begin
+       dec_rs1_data = exe_result;
+      end
+   end
+   
+   if((dec_rs2==exe_rd)&&exe_rd_wenb&&dec_rs2_renb)
+    begin
+    if(exe_load)
+     begin
+      dec_stall = 1;
+     end
+     else
+      begin
+       dec_rs2_data = exe_result;
+      end
+   end
+   // this is just to assign a value
+  dec_load_use    = 0; // this is just to assign a value
+  dec_csr_use     = 0; // this is just to assign a value
 
   //===========================================================================
   // Leave these next two lines intact for Part (a), but for Part (b)
   // the logic for dec_rs1_data and dec_rs2_data will need to be modified.
   //
-  dec_rs1_data    = dec_rdata1;
-  dec_rs2_data    = dec_rdata2;
+  
  
-  end // bypass_stall_PROC
+  end // bypass_stall_PROCbypass_stall_PROC
 
 endmodule

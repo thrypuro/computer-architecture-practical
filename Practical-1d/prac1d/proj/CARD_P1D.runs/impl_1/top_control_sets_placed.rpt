@@ -1,0 +1,164 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Oct 25 03:37:46 2021
+| Host         : DESKTOP-M660UKK running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    86 |
+|    Minimum number of control sets                        |    86 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   139 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    86 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    73 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              92 |           25 |
+| No           | No                    | Yes                    |             255 |           84 |
+| No           | Yes                   | No                     |              42 |           16 |
+| Yes          | No                    | No                     |             507 |          207 |
+| Yes          | No                    | Yes                    |            2149 |          719 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+----------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+----------------+--------------+
+|            Clock Signal           |                             Enable Signal                            |                                 Set/Reset Signal                                 | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------+----------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  u_cpu_clock_gen/inst/clk_60MHz   |                                                                      |                                                                                  |                1 |              2 |         2.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_control_unit/zybo_leds_r[3]_i_1_n_0                          | u_resync/reset                                                                   |                1 |              4 |         4.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/wrb_ctrl_cg0                                       | u_resync/reset                                                                   |                1 |              4 |         4.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/mem_ctrl_cg0                                       | u_resync/reset                                                                   |                5 |              8 |         1.60 |
+|  u_video_clock_gen/inst/pixel_clk | u_dvi_display/u_vga_control/s2_row_addr_r                            | u_resync/reset                                                                   |                3 |              8 |         2.67 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_control_unit/zybo_ssd_r[7]_i_1_n_0                           | u_resync/reset                                                                   |                4 |              8 |         2.00 |
+|  u_video_clock_gen/inst/pixel_clk | u_dvi_display/u_vga_control/vc_request                               | u_resync/reset                                                                   |                2 |              8 |         4.00 |
+|  u_video_clock_gen/inst/pixel_clk |                                                                      | u_dvi_display/u_rgb2dvi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                3 |             10 |         3.33 |
+|  u_video_clock_gen/inst/pixel_clk | u_dvi_display/u_vga_control/s1_vcount_r[10]_i_1_n_0                  | u_resync/reset                                                                   |                3 |             11 |         3.67 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/exe_ctrl_cg0                                       | u_resync/reset                                                                   |                3 |             11 |         3.67 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_divider/div_opc_cg0                              | u_resync/reset                                                                   |                4 |             12 |         3.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   |                                                                      | rst_a_IBUF                                                                       |                4 |             14 |         3.50 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/fch_stage_cg0                                     |                                                                                  |                5 |             15 |         3.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_control_unit/px_address_r[15]_i_1_n_0                        | u_resync/reset                                                                   |                9 |             16 |         1.78 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_control_unit/px_read_data_cg0                                | u_resync/reset                                                                   |               13 |             16 |         1.23 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_control_unit/px_write_data_r[23]_i_1_n_0                     | u_resync/reset                                                                   |               18 |             24 |         1.33 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/wrb_ras_r[6][31]_i_1_n_0 | u_resync/reset                                                                   |                5 |             29 |         5.80 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/fch_ras_r[4][31]_i_1_n_0 | u_resync/reset                                                                   |                7 |             29 |         4.14 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/fch_ras_r[0][31]_i_1_n_0 | u_resync/reset                                                                   |                8 |             29 |         3.62 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/fch_ras_r[1][31]_i_1_n_0 | u_resync/reset                                                                   |                7 |             29 |         4.14 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/fch_ras_r[2][31]_i_1_n_0 | u_resync/reset                                                                   |                4 |             29 |         7.25 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/fch_ras_r[3][31]_i_1_n_0 | u_resync/reset                                                                   |                7 |             29 |         4.14 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/fch_ras_r[6][31]_i_1_n_0 | u_resync/reset                                                                   |                7 |             29 |         4.14 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/fch_ras_r[5][31]_i_1_n_0 | u_resync/reset                                                                   |                5 |             29 |         5.80 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/fch_ras_r[7][31]_i_1_n_0 | u_resync/reset                                                                   |                7 |             29 |         4.14 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/wrb_ras_r                | u_resync/reset                                                                   |                8 |             29 |         3.62 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/wrb_ras_r[1][31]_i_1_n_0 | u_resync/reset                                                                   |                4 |             29 |         7.25 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/wrb_ras_r[7][31]_i_1_n_0 | u_resync/reset                                                                   |                6 |             29 |         4.83 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/wrb_ras_r[3][31]_i_1_n_0 | u_resync/reset                                                                   |                6 |             29 |         4.83 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/wrb_ras_r[4][31]_i_1_n_0 | u_resync/reset                                                                   |                5 |             29 |         5.80 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/wrb_ras_r[2][31]_i_1_n_0 | u_resync/reset                                                                   |                6 |             29 |         4.83 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/u_branch_predictor/u_ras/wrb_ras_r[5][31]_i_1_n_0 | u_resync/reset                                                                   |                5 |             29 |         5.80 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/mem_data_cg0                                       | u_resync/reset                                                                   |               10 |             30 |         3.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/exe_reg2_r[31]_i_1_n_0                             | u_resync/reset                                                                   |               14 |             30 |         2.14 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/fch_stage_cg0                                     | u_resync/reset                                                                   |               10 |             30 |         3.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/nxt_pc_r[31]_i_1_n_0                               | u_resync/reset                                                                   |               11 |             30 |         2.73 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/dec_pc_r[31]_i_1_n_0                               | u_resync/reset                                                                   |               12 |             30 |         2.50 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[2][31]_i_1_n_0                     | u_resync/reset                                                                   |                7 |             32 |         4.57 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[30][31]_i_1_n_0                    | u_resync/reset                                                                   |                9 |             32 |         3.56 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[3][31]_i_1_n_0                     | u_resync/reset                                                                   |                9 |             32 |         3.56 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[29][31]_i_1_n_0                    | u_resync/reset                                                                   |                8 |             32 |         4.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[9][31]_i_1_n_0                     | u_resync/reset                                                                   |               24 |             32 |         1.33 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[8][31]_i_1_n_0                     | u_resync/reset                                                                   |               13 |             32 |         2.46 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_divider/div_region_r                             | u_resync/reset                                                                   |               11 |             32 |         2.91 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/fch_iccm_cen                                      |                                                                                  |               20 |             32 |         1.60 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_fetch_unit/fch_iccm_dout[31]_i_1_n_0                         |                                                                                  |               16 |             32 |         2.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[6][31]_i_1_n_0                     | u_resync/reset                                                                   |                7 |             32 |         4.57 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[7][31]_i_1_n_0                     | u_resync/reset                                                                   |               12 |             32 |         2.67 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[13][31]_i_1_n_0                    | u_resync/reset                                                                   |               11 |             32 |         2.91 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[16][31]_i_1_n_0                    | u_resync/reset                                                                   |               20 |             32 |         1.60 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[15][31]_i_1_n_0                    | u_resync/reset                                                                   |               12 |             32 |         2.67 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[19][31]_i_1_n_0                    | u_resync/reset                                                                   |                8 |             32 |         4.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[1][31]_i_1_n_0                     | u_resync/reset                                                                   |               10 |             32 |         3.20 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[12][31]_i_1_n_0                    | u_resync/reset                                                                   |               12 |             32 |         2.67 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[20][31]_i_1_n_0                    | u_resync/reset                                                                   |                6 |             32 |         5.33 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[25][31]_i_1_n_0                    | u_resync/reset                                                                   |               13 |             32 |         2.46 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[26][31]_i_1_n_0                    | u_resync/reset                                                                   |                9 |             32 |         3.56 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[28][31]_i_1_n_0                    | u_resync/reset                                                                   |               10 |             32 |         3.20 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[23][31]_i_1_n_0                    | u_resync/reset                                                                   |               14 |             32 |         2.29 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[10][31]_i_1_n_0                    | u_resync/reset                                                                   |               22 |             32 |         1.45 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[22][31]_i_1_n_0                    | u_resync/reset                                                                   |               14 |             32 |         2.29 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[31][31]_i_1_n_0                    | u_resync/reset                                                                   |               16 |             32 |         2.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[17][31]_i_1_n_0                    | u_resync/reset                                                                   |               12 |             32 |         2.67 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[11][31]_i_1_n_0                    | u_resync/reset                                                                   |               16 |             32 |         2.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[5][31]_i_1_n_0                     | u_resync/reset                                                                   |               10 |             32 |         3.20 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[18][31]_i_1_n_0                    | u_resync/reset                                                                   |               12 |             32 |         2.67 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[14][31]_i_1_n_0                    | u_resync/reset                                                                   |                8 |             32 |         4.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[4][31]_i_1_n_0                     | u_resync/reset                                                                   |                9 |             32 |         3.56 |
+|  u_video_clock_gen/inst/pixel_clk |                                                                      | u_dvi_display/u_rgb2dvi/U0/DataEncoders[0].DataEncoder/SR[0]                     |               13 |             32 |         2.46 |
+|  u_video_clock_gen/inst/pixel_clk | u_dvi_display/u_msec_timer/msec_elapsed_r                            | u_resync/reset                                                                   |                8 |             32 |         4.00 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[24][31]_i_1_n_0                    | u_resync/reset                                                                   |               20 |             32 |         1.60 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[21][31]_i_1_n_0                    | u_resync/reset                                                                   |                6 |             32 |         5.33 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_regfile/r_reg[27][31]_i_1_n_0                    | u_resync/reset                                                                   |                9 |             32 |         3.56 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_divider/divisor_cg0                              | u_resync/reset                                                                   |               10 |             34 |         3.40 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_store_queue/stq_write[1]                         | u_resync/reset                                                                   |               14 |             46 |         3.29 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_store_queue/stq_write[0]                         | u_resync/reset                                                                   |               17 |             46 |         2.71 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_control_unit/p_0_in[2]                                       | u_resync/reset                                                                   |               16 |             64 |         4.00 |
+|  u_video_clock_gen/inst/pixel_clk |                                                                      | u_resync/reset                                                                   |               20 |             65 |         3.25 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/u_divider/div_acc_r                                | u_resync/reset                                                                   |               32 |             65 |         2.03 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/dec_pc_r[31]_i_1_n_0                               |                                                                                  |               32 |             69 |         2.16 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/commit_evt                                         |                                                                                  |               27 |             76 |         2.81 |
+|  u_video_clock_gen/inst/pixel_clk |                                                                      |                                                                                  |               24 |             90 |         3.75 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/commit_evt                                         | u_resync/reset                                                                   |               23 |             94 |         4.09 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/mem_data_cg0                                       |                                                                                  |               46 |            123 |         2.67 |
+|  u_cpu_clock_gen/inst/clk_60MHz   | u_cpu/u_exec_unit/exe_reg2_r[31]_i_1_n_0                             |                                                                                  |               61 |            160 |         2.62 |
+|  u_cpu_clock_gen/inst/clk_60MHz   |                                                                      | u_resync/reset                                                                   |               60 |            176 |         2.93 |
++-----------------------------------+----------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+
