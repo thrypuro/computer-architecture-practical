@@ -1,3 +1,10 @@
+# Practical 1 b) - ALU
+
+## Code
+
+**Alu.v  (top module)**
+
+```verilog
 `timescale 1ns / 1ps
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -122,4 +129,155 @@ always @*
  end 
 
 endmodule
+
+```
+
+### Sub modules used in the top module
+
+**Addition/Subtraction module** 
+
+```verilog
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 06.10.2021 01:48:52
+// Design Name: 
+// Module Name: alu_adder
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: Addition and subtraction operation module
+// additionally also used to compute the register address with offset 
+// depending on the operand 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module alu_adder(
+    input [31:0] A1,
+    input [31:0] A2,
+    input [31:0] B,
+    input sel,
+    output reg [31:0] result
+    );
+    // reg value to help with selecting the first operand
+    reg [31:0] A;
+    always @*
+    begin
+     // sets to 0 to avoid inferred latches
+     A = 0;
+     /* Selects the second operand 
+     this is from whether it is calculating the address or 
+     doing normal addition operation
+     */
+     if(sel)
+      begin
+       A = A1;
+      end
+      else
+       begin
+        A = A2;
+       end
+      // calculates the result 
+      result = A+B;
+    end
+   
+endmodule
+```
+
+**Signed comparison module**
+
+```verilog
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 10/25/2021 04:09:39 PM
+// Design Name: 
+// Module Name: signed_compared
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: Signed comparison of two operators
+// 
+// Dependencies: 
+//  
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module signed_compared(
+    input [31:0] A,
+    input [31:0] B,
+    output reg result
+    );
+// Combinatoric logic
+always @*
+    begin
+     // checks if the last bit of A is set and B is not
+     // equivalent to is A negative and B positive
+     if(A[31] && B[31]==0)
+      begin
+       result = 1;
+      end
+     // Checks if last bit of B is set and A is not 
+     // equivalent to is B negative and A positive
+     else if(A[31]==0 && B[31])
+      begin
+       result =0;
+      end
+      else 
+       // Same sign so just do need to do a comparison 
+       result = A<B;
+    end
+    
+endmodule
+```
+
+
+
+## Synthesising the module
+
+The synthesis went smothly with no errors, we can proceed to check the timing and utilisation reports to see the information about our design. 
+
+### Utilisation report 
+
+#### Summary
+
+The summary section of the utilisation report shows the total number of LUTs used, as well as the the IO pins used, it is indicated below.
+
+![image-20211025180649528](Practical-writeup.assets/image-20211025180649528.png)
+
+Addition comments : 557 LUTs are not as optimised as it can be, reducing the LUTs could be done by optimising the code further, but i would not like to sacrifice the readability of the code for optimisation. 
+
+#### Primitives
+
+
+
+### Timing and resource utilisation 
+
+#### Summary 
+
+Looking at the timing report in vivado in the Design timing summary we see that:
+
+![image-20211025180039218](Practical-writeup.assets/image-20211025180039218.png) 
+
+This shows that there is no inferred latches nor any combinational loops. The WNS and WHS are from the `timing.xdc` being at the period `20`, we shall further reduce it as we go on to see, if we can run the code at lower Clock period.
+
+### 
+
+
+
+
 

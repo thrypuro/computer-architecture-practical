@@ -9,8 +9,9 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
-// 
+// Description: Addition and subtraction operation module
+// additionally also used to compute the register address with offset 
+// depending on the operand 
 // Dependencies: 
 // 
 // Revision:
@@ -27,10 +28,16 @@ module alu_adder(
     input sel,
     output reg [31:0] result
     );
+    // reg value to help with selecting the first operand
     reg [31:0] A;
     always @*
     begin
+     // sets to 0 to avoid inferred latches
      A = 0;
+     /* Selects the second operand 
+     this is from whether it is calculating the address or 
+     doing normal addition operation
+     */
      if(sel)
       begin
        A = A1;
@@ -39,7 +46,7 @@ module alu_adder(
        begin
         A = A2;
        end
-
+      // calculates the result 
       result = A+B;
     end
    

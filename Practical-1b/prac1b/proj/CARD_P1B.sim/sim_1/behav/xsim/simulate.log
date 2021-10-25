@@ -1,8 +1,0 @@
-Time resolution is 1 ps
-Your ALU passed 10000 random tests, including:
-  s) AND, OR, XOR
-  b) ADD, SUB
-  c) SLT, SLTU
-  d) SLL, SRL, SRA
-Congratulations, your ALU is verified for all functions!
-$finish called at time : 100015 ns : File "C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1b/prac1b/src/sim/tb.v" Line 218

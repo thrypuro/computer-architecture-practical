@@ -4,6 +4,7 @@ verilog xil_defaultlib  --include "../../../../../src/inc" \
 "../../../../../src/hdl/alu.v" \
 "../../../../CARD_P1B.srcs/sources_1/new/alu_adder.v" \
 "../../../../CARD_P1B.srcs/sources_1/new/alu_arith_shift_right.v" \
+"../../../../CARD_P1B.srcs/sources_1/new/signed_compared.v" \
 "../../../../../src/sim/tb.v" \
 
 # compile glbl module
