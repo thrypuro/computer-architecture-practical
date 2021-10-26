@@ -2,8 +2,8 @@
 # Webtalk v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun Oct 24 21:20:23 2021
-# Process ID: 4984
+# Start of session at: Mon Oct 25 21:02:12 2021
+# Process ID: 16284
 # Current directory: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.sim/sim_1/behav/xsim/webtalk.log

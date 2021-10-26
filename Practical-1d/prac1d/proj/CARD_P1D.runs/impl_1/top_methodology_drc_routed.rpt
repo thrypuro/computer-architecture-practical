@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Mon Oct 25 03:38:56 2021
+| Date         : Mon Oct 25 21:14:42 2021
 | Host         : DESKTOP-M660UKK running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,14 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 22
+             Violations found: 21
 +-----------+------------------+-------------------------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                                             | Violations |
 +-----------+------------------+-------------------------------------------------------------------------+------------+
 | TIMING-2  | Critical Warning | Invalid primary clock source pin                                        | 1          |
 | TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree                      | 1          |
 | SYNTH-4   | Warning          | Shallow depth for a dedicated block RAM                                 | 1          |
-| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal                              | 1          |
 | SYNTH-10  | Warning          | Wide multiplier                                                         | 4          |
 | SYNTH-16  | Warning          | Address collision                                                       | 2          |
 | TIMING-9  | Warning          | Unknown CDC Logic                                                       | 1          |
@@ -56,11 +55,6 @@ Related violations: <none>
 SYNTH-4#1 Warning
 Shallow depth for a dedicated block RAM  
 The instance u_cpu/u_fetch_unit/u_branch_predictor/u_predictor_state/ps_ram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason: The depth (8 address bits) is shallow. Please use attribute (* ram_style = "distributed" *)  to instruct Vivado to infer distributed LUT RAM.
-Related violations: <none>
-
-SYNTH-6#1 Warning
-Timing of a RAM block might be sub-optimal  
-The timing for the instance u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-10#1 Warning

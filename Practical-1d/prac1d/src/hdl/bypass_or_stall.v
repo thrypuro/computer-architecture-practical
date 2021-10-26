@@ -84,7 +84,7 @@ always @*
     
      if((dec_rs1==exe_rd)&&exe_rd_wenb&&dec_rs1_renb)
    begin
-    if(exe_load)
+    if(exe_load || exe_csr)
      begin
       dec_stall = 1;
      end

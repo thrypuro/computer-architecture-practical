@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon Oct 25 03:37:03 2021
-# Process ID: 16284
+# Start of session at: Mon Oct 25 21:12:45 2021
+# Process ID: 8108
 # Current directory: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/impl_1/top.vdi
@@ -22,7 +22,7 @@ INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen.dcp' for cell 'u_cpu_clock_gen'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen.dcp' for cell 'u_video_clock_gen'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'u_dvi_display/u_rgb2dvi'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1142.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1144.062 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1020 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3
@@ -37,7 +37,7 @@ Finished Parsing XDC File [c:/Users/madha/OneDrive/Desktop/Github/computer-archi
 Parsing XDC File [c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen.xdc] for cell 'u_video_clock_gen/inst'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen.xdc:57]
 INFO: [Timing 38-2] Deriving generated clocks [c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen.xdc:57]
-get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1421.590 ; gain = 278.836
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1419.602 ; gain = 275.539
 Finished Parsing XDC File [c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen.xdc] for cell 'u_video_clock_gen/inst'
 Parsing XDC File [c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen_board.xdc] for cell 'u_cpu_clock_gen/inst'
 Finished Parsing XDC File [c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen_board.xdc] for cell 'u_cpu_clock_gen/inst'
@@ -453,13 +453,13 @@ Finished Parsing XDC File [C:/Users/madha/OneDrive/Desktop/Github/computer-archi
 Parsing XDC File [c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'u_dvi_display/u_rgb2dvi/U0'
 Finished Parsing XDC File [c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'u_dvi_display/u_rgb2dvi/U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1421.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1419.602 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 18 Infos, 203 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1421.590 ; gain = 278.836
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1419.602 ; gain = 275.539
 Command: opt_design -directive RuntimeOptimized
 INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: RuntimeOptimized
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -471,7 +471,7 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1421.590 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1419.602 ; gain = 0.000
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -479,43 +479,43 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 96a118da
+Phase 1 Retarget | Checksum: 16fbdacaf
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.621 . Memory (MB): peak = 1669.066 ; gain = 95.863
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.642 . Memory (MB): peak = 1670.438 ; gain = 95.812
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 3 cells
 INFO: [Opt 31-1021] In phase Retarget, 482 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 100b75e3a
+Phase 2 Constant propagation | Checksum: e9395793
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.676 . Memory (MB): peak = 1669.066 ; gain = 95.863
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.698 . Memory (MB): peak = 1670.438 ; gain = 95.812
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1691dc32a
+Phase 3 Sweep | Checksum: 149351faa
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.762 . Memory (MB): peak = 1669.066 ; gain = 95.863
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.783 . Memory (MB): peak = 1670.438 ; gain = 95.812
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Sweep, 528 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 1691dc32a
+Phase 4 BUFG optimization | Checksum: 149351faa
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.859 . Memory (MB): peak = 1669.066 ; gain = 95.863
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.880 . Memory (MB): peak = 1670.438 ; gain = 95.812
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1691dc32a
+Phase 5 Shift Register Optimization | Checksum: 149351faa
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.871 . Memory (MB): peak = 1669.066 ; gain = 95.863
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.893 . Memory (MB): peak = 1670.438 ; gain = 95.812
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 1691dc32a
+Phase 6 Post Processing Netlist | Checksum: 149351faa
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.892 . Memory (MB): peak = 1669.066 ; gain = 95.863
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.915 . Memory (MB): peak = 1670.438 ; gain = 95.812
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -536,16 +536,16 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1669.066 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 222cf17c1
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1670.438 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 21b24fb10
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1669.066 ; gain = 95.863
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1670.438 ; gain = 95.812
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1669.066 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 222cf17c1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1670.438 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 21b24fb10
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1669.066 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1670.438 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 37 Infos, 203 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
@@ -554,7 +554,7 @@ Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1669.066 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1670.438 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/impl_1/top_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
@@ -573,6 +573,8 @@ Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 2 threads
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (halt_detect_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (run_detect_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_control_unit/px_command_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_control_unit/px_command_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_control_unit/run_mode_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -582,20 +584,18 @@ WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[18]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[19]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[20]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[23]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_resync/sync_btn_2_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_resync/sync_btn_2_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/u_store_queue/rp_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/u_store_queue/stq_addr_r_reg[0][10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/u_store_queue/stq_addr_r_reg[1][10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[13] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[11]) which is driven by a register (u_cpu/u_exec_unit/exe_load_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[13] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[11]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[13] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[11]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -623,94 +623,94 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1697.969 ; gain = 0.000
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 13483a4fb
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1695.582 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1697.969 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17b0a681d
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.349 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.371 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 211f49733
+Phase 1.3 Build Placer Netlist Model | Checksum: 23574b31e
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 211f49733
+Phase 1.4 Constrain Clocks/Macros | Checksum: 23574b31e
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1695.582 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 211f49733
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1697.969 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 23574b31e
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 1978bc350
+Phase 2.1 Floorplanning | Checksum: 274f5392b
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1915149f2
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 21f18c997
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 1915149f2
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 21f18c997
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 2.4 Global Placement Core
-Phase 2.4 Global Placement Core | Checksum: 1d8a5d67a
+Phase 2.4 Global Placement Core | Checksum: 128899da5
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1695.582 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 1d8a5d67a
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1697.969 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 128899da5
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 17ba86094
+Phase 3.1 Commit Multi Column Macros | Checksum: 10ff663c4
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 25446d019
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1c5a0b05a
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 212343f62
+Phase 3.3 Area Swap Optimization | Checksum: d358e5ab
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 2058c1bc7
+Phase 3.4 Pipeline Register Optimization | Checksum: f9e68652
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 197704700
+Phase 3.5 Small Shape Detail Placement | Checksum: 1d3aeb196
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 1443b5266
+Phase 3.6 Re-assign LUT pins | Checksum: 134e24092
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 1443b5266
+Phase 3.7 Pipeline Register Optimization | Checksum: 1ab473298
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1695.582 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1443b5266
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1697.969 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1ab473298
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1695.582 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1697.969 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -718,7 +718,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1330dc398
+Post Placement Optimization Initialization | Checksum: 149b50e0b
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -726,34 +726,34 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.367 | TNS=0.000 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1d63defa2
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.879 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1cf967f51
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.354 . Memory (MB): peak = 1702.824 ; gain = 0.059
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.375 . Memory (MB): peak = 1702.230 ; gain = 0.062
 INFO: [Place 46-33] Processed net u_resync/reset, BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Ending Physical Synthesis Task | Checksum: 17ed66717
+Ending Physical Synthesis Task | Checksum: 18cd0e879
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.524 . Memory (MB): peak = 1702.824 ; gain = 0.059
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1330dc398
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.567 . Memory (MB): peak = 1702.230 ; gain = 0.062
+Phase 4.1.1.1 BUFG Insertion | Checksum: 149b50e0b
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1702.824 ; gain = 7.242
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=1.367. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 112d1871c
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.879. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 184084f29
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1702.824 ; gain = 7.242
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1702.824 ; gain = 7.242
-Phase 4.1 Post Commit Optimization | Checksum: 112d1871c
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
+Phase 4.1 Post Commit Optimization | Checksum: 184084f29
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1702.824 ; gain = 7.242
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 112d1871c
+Phase 4.2 Post Placement Cleanup | Checksum: 184084f29
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1702.824 ; gain = 7.242
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
 
 Phase 4.3 Placer Reporting
 
@@ -763,48 +763,48 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |           | Global Congestion | Short Congestion  |
 | Direction | Region Size       | Region Size       |
 |___________|___________________|___________________|
-|      North|                1x1|                1x1|
+|      North|                1x1|                2x2|
 |___________|___________________|___________________|
 |      South|                1x1|                4x4|
 |___________|___________________|___________________|
-|       East|                1x1|                2x2|
+|       East|                1x1|                1x1|
 |___________|___________________|___________________|
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 112d1871c
+Phase 4.3.1 Print Estimated Congestion | Checksum: 184084f29
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1702.824 ; gain = 7.242
-Phase 4.3 Placer Reporting | Checksum: 112d1871c
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
+Phase 4.3 Placer Reporting | Checksum: 184084f29
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1702.824 ; gain = 7.242
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1702.824 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1702.230 ; gain = 0.000
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1702.824 ; gain = 7.242
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17b17553e
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1ec4e1d4b
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1702.824 ; gain = 7.242
-Ending Placer Task | Checksum: f8d0c273
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
+Ending Placer Task | Checksum: 10e756086
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1702.824 ; gain = 7.242
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.230 ; gain = 4.262
 INFO: [Common 17-83] Releasing license: Implementation
 61 Infos, 245 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1702.824 ; gain = 13.465
+place_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1702.230 ; gain = 14.535
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.526 . Memory (MB): peak = 1702.824 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.623 . Memory (MB): peak = 1702.230 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/impl_1/top_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1702.824 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1702.230 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1702.824 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1702.230 ; gain = 0.000
 Command: route_design -directive RuntimeOptimized
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -817,61 +817,61 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 Starting Routing Task
 INFO: [Route 35-270] Using Router directive 'RuntimeOptimized'.
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 4b1b46bc ConstDB: 0 ShapeSum: adb57bb7 RouteDB: 0
+Checksum: PlaceDB: 60bfe4cf ConstDB: 0 ShapeSum: adb57bb7 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: edc7bed8
+Phase 1 Build RT Design | Checksum: 1490aa390
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1832.988 ; gain = 99.930
-Post Restoration Checksum: NetGraph: 14482d57 NumContArr: d97f9181 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1835.891 ; gain = 103.465
+Post Restoration Checksum: NetGraph: 563c5fa7 NumContArr: f2ce43e9 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: edc7bed8
+Phase 2.1 Create Timer | Checksum: 1490aa390
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1833.000 ; gain = 99.941
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1835.891 ; gain = 103.465
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: edc7bed8
+Phase 2.2 Fix Topology Constraints | Checksum: 1490aa390
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1839.977 ; gain = 106.918
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1842.777 ; gain = 110.352
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: edc7bed8
+Phase 2.3 Pre Route Cleanup | Checksum: 1490aa390
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1839.977 ; gain = 106.918
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1842.777 ; gain = 110.352
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 12730836c
+Phase 2.4 Update Timing | Checksum: b1e9a957
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 1865.738 ; gain = 132.680
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.400  | TNS=0.000  | WHS=-0.219 | THS=-31.375|
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1869.621 ; gain = 137.195
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.893  | TNS=0.000  | WHS=-0.217 | THS=-32.000|
 
 
 Phase 2.5 Update Timing for Bus Skew
 
 Phase 2.5.1 Update Timing
-Phase 2.5.1 Update Timing | Checksum: e195372b
+Phase 2.5.1 Update Timing | Checksum: 8e2a0096
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1897.039 ; gain = 163.980
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.400  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 1898.738 ; gain = 166.312
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.893  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
 WARNING: [Route 35-462] Failed to populate 861 paths in bus skew group (internal name : grp_0). These paths are:
-	u_dvi_display/u_frame_buffer/fb_memory_reg_0_10/ADDRARDADDR[0]
-	u_dvi_display/u_frame_buffer/fb_memory_reg_0_6/ADDRARDADDR[0]
+	u_dvi_display/u_frame_buffer/fb_memory_reg_0_21/ADDRARDADDR[0]
+	u_dvi_display/u_frame_buffer/fb_memory_reg_0_18/ADDRARDADDR[0]
+	u_dvi_display/u_frame_buffer/fb_memory_reg_1_14/ADDRARDADDR[0]
 	u_dvi_display/u_frame_buffer/fb_memory_reg_0_14/ADDRARDADDR[0]
-	u_dvi_display/u_frame_buffer/fb_memory_reg_1_13/ADDRARDADDR[0]
-	u_dvi_display/u_frame_buffer/fb_memory_reg_1_5/ADDRARDADDR[0]
+	u_dvi_display/u_frame_buffer/fb_memory_reg_1_16/ADDRARDADDR[0]
 	.. and 856 more.
 
-Phase 2.5 Update Timing for Bus Skew | Checksum: 18d5375ea
+Phase 2.5 Update Timing for Bus Skew | Checksum: 4a589005
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1909.496 ; gain = 176.438
-Phase 2 Router Initialization | Checksum: 18d5375ea
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:41 . Memory (MB): peak = 1911.824 ; gain = 179.398
+Phase 2 Router Initialization | Checksum: c3ca7379
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:41 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -879,9 +879,9 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 6459
+  Number of Failed Nets               = 6456
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 6459
+  Number of Unrouted Nets             = 6456
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
@@ -889,79 +889,71 @@ Router Utilization Summary
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 18d5375ea
+Phase 3.1 Global Routing | Checksum: c3ca7379
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1909.496 ; gain = 176.438
-Phase 3 Initial Routing | Checksum: 15dc83c52
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:41 . Memory (MB): peak = 1911.824 ; gain = 179.398
+Phase 3 Initial Routing | Checksum: 2191e99a6
 
-Time (s): cpu = 00:00:46 ; elapsed = 00:00:39 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:42 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 2604
- Number of Nodes with overlaps = 1018
- Number of Nodes with overlaps = 591
- Number of Nodes with overlaps = 199
- Number of Nodes with overlaps = 83
- Number of Nodes with overlaps = 35
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2382
+ Number of Nodes with overlaps = 920
+ Number of Nodes with overlaps = 520
+ Number of Nodes with overlaps = 245
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.438  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.644  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 2078da4a5
+Phase 4.1 Global Iteration 0 | Checksum: 1f8165935
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:57 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
+Phase 4 Rip-up And Reroute | Checksum: 1f8165935
 
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.438  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: 187903a07
-
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:57 . Memory (MB): peak = 1909.496 ; gain = 176.438
-Phase 4 Rip-up And Reroute | Checksum: 187903a07
-
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:57 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 187903a07
+Phase 5.1 Delay CleanUp | Checksum: 1f8165935
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:57 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 187903a07
+Phase 5.2 Clock Skew Optimization | Checksum: 1f8165935
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:57 . Memory (MB): peak = 1909.496 ; gain = 176.438
-Phase 5 Delay and Skew Optimization | Checksum: 187903a07
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
+Phase 5 Delay and Skew Optimization | Checksum: 1f8165935
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:57 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1c2ddc42f
+Phase 6.1.1 Update Timing | Checksum: 15d765151
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1909.496 ; gain = 176.438
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.607  | TNS=0.000  | WHS=0.033  | THS=0.000  |
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.775  | TNS=0.000  | WHS=0.033  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 197069b47
+Phase 6.1 Hold Fix Iter | Checksum: 200aa439b
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1909.496 ; gain = 176.438
-Phase 6 Post Hold Fix | Checksum: 197069b47
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
+Phase 6 Post Hold Fix | Checksum: 200aa439b
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 2.15698 %
-  Global Horizontal Routing Utilization  = 2.19777 %
+  Global Vertical Routing Utilization    = 1.87967 %
+  Global Horizontal Routing Utilization  = 2.22853 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -971,44 +963,44 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 19f50415f
+Phase 7 Route finalize | Checksum: 1470398b3
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 19f50415f
+Phase 8 Verifying routed nets | Checksum: 1470398b3
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 23a06570c
+Phase 9 Depositing Routes | Checksum: 180bcd8d5
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:59 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:59 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=1.607  | TNS=0.000  | WHS=0.033  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.775  | TNS=0.000  | WHS=0.033  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 23a06570c
+Phase 10 Post Router Timing | Checksum: 180bcd8d5
 
-Time (s): cpu = 00:01:08 ; elapsed = 00:00:59 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:00 . Memory (MB): peak = 1911.824 ; gain = 179.398
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:01:08 ; elapsed = 00:00:59 . Memory (MB): peak = 1909.496 ; gain = 176.438
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:00 . Memory (MB): peak = 1911.824 ; gain = 179.398
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-81 Infos, 246 Warnings, 0 Critical Warnings and 0 Errors encountered.
+80 Infos, 246 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:02 . Memory (MB): peak = 1909.496 ; gain = 206.672
+route_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:02 . Memory (MB): peak = 1911.824 ; gain = 209.594
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.744 . Memory (MB): peak = 1909.496 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.799 . Memory (MB): peak = 1911.824 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/impl_1/top_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
@@ -1028,7 +1020,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-93 Infos, 246 Warnings, 0 Critical Warnings and 0 Errors encountered.
+92 Infos, 246 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
@@ -1041,13 +1033,13 @@ INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilizatio
 INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 25 03:39:01 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 25 21:14:47 2021...
 #-----------------------------------------------------------
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon Oct 25 03:39:26 2021
-# Process ID: 15524
+# Start of session at: Mon Oct 25 21:15:47 2021
+# Process ID: 17204
 # Current directory: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/impl_1/top.vdi
@@ -1058,11 +1050,11 @@ Command: open_checkpoint top_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1145.004 ; gain = 1.832
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1145.363 ; gain = 2.809
 CRITICAL WARNING: [Board 49-67] The board_part definition was not found for tul.com.tw:pynq-z2:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
 CRITICAL WARNING: [Board 49-67] The board_part definition was not found for tul.com.tw:pynq-z2:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1145.004 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1145.363 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1020 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2021.1
@@ -1075,15 +1067,15 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.773 . Memory (MB): peak = 1394.496 ; gain = 2.945
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.774 . Memory (MB): peak = 1394.496 ; gain = 2.945
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1394.496 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.823 . Memory (MB): peak = 1394.109 ; gain = 2.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.823 . Memory (MB): peak = 1394.109 ; gain = 2.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1394.109 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2021.1 (64-bit) build 3247384
-open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1394.496 ; gain = 258.551
+open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1394.109 ; gain = 259.188
 Command: write_bitstream -force top.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -1108,29 +1100,29 @@ WARNING: [DRC DPOP-2] MREG Output pipelining: DSP u_cpu/u_exec_unit/m32_result0 
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP u_cpu/u_exec_unit/m32_result0__0 multiplier stage u_cpu/u_exec_unit/m32_result0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP u_cpu/u_exec_unit/m32_result0__1 multiplier stage u_cpu/u_exec_unit/m32_result0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP u_cpu/u_exec_unit/m32_result0__2 multiplier stage u_cpu/u_exec_unit/m32_result0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_control_unit/px_command_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_control_unit/px_command_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_control_unit/run_mode_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/dec_valid_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/done_reset_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/exe_csr_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/exe_load_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/u_divider/div_state_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/u_divider/div_state_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[54]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[58]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[60]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[74]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[76]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[82]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[84]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[86]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[88]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[90]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_entry_v_r_reg[94]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/u_store_queue/rp_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/u_store_queue/stq_addr_r_reg[0][10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/u_store_queue/stq_addr_r_reg[1][10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/exe_rd_wenb_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/exe_valid_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/mem_csr_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/mem_priv_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/mem_valid_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/nxt_pc_r_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_exec_unit/wrb_restart_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_pc_r_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg has an input control pin u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg/ADDRARDADDR[13] (net: u_cpu/u_fetch_unit/u_branch_predictor/u_branch_cache/bc_ram_reg_i_1_n_0) which is driven by a register (u_cpu/u_fetch_unit/fch_valid_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[12] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[10]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[13] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[11]) which is driven by a register (u_cpu/u_exec_unit/exe_load_r_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[13] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[11]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg has an input control pin u_cpu/u_exec_unit/u_dccm_ram/dccm_b0_reg/ADDRARDADDR[13] (net: u_cpu/u_exec_unit/u_dccm_ram/dccm_addr[11]) which is driven by a register (u_cpu/u_exec_unit/exe_pc_r_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -1161,9 +1153,9 @@ Creating bitstream...
 Writing bitstream ./top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [#UNDEF] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Oct 25 03:40:06 2021. For additional details about this file, please refer to the WebTalk help file at D:/Xilinix/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Oct 25 21:16:29 2021. For additional details about this file, please refer to the WebTalk help file at D:/Xilinix/Vivado/2021.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
 23 Infos, 58 Warnings, 2 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1957.855 ; gain = 563.359
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 25 03:40:06 2021...
+write_bitstream: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1961.512 ; gain = 567.402
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 25 21:16:29 2021...

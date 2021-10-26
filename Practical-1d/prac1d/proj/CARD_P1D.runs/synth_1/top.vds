@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon Oct 25 03:35:33 2021
-# Process ID: 2508
+# Start of session at: Mon Oct 25 21:10:47 2021
+# Process ID: 13020
 # Current directory: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/top.vds
@@ -22,19 +22,19 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11160
+INFO: [Synth 8-7075] Helper process launched with PID 12144
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1143.094 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1143.512 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/top.v:14]
 INFO: [Synth 8-6157] synthesizing module 'ssd_driver' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/ssd_driver.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'ssd_driver' (1#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/ssd_driver.v:23]
 INFO: [Synth 8-6157] synthesizing module 'resync' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/resync.v:25]
 INFO: [Synth 8-6155] done synthesizing module 'resync' (2#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/resync.v:25]
-INFO: [Synth 8-6157] synthesizing module 'cpu_clock_gen' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-2508-DESKTOP-M660UKK/realtime/cpu_clock_gen_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_clock_gen' (3#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-2508-DESKTOP-M660UKK/realtime/cpu_clock_gen_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'video_clock_gen' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-2508-DESKTOP-M660UKK/realtime/video_clock_gen_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'video_clock_gen' (4#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-2508-DESKTOP-M660UKK/realtime/video_clock_gen_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cpu_clock_gen' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-13020-DESKTOP-M660UKK/realtime/cpu_clock_gen_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_clock_gen' (3#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-13020-DESKTOP-M660UKK/realtime/cpu_clock_gen_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'video_clock_gen' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-13020-DESKTOP-M660UKK/realtime/video_clock_gen_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_clock_gen' (4#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-13020-DESKTOP-M660UKK/realtime/video_clock_gen_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/cpu.v:20]
 INFO: [Synth 8-6157] synthesizing module 'fetch_unit' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/fetch_unit.v:20]
 INFO: [Synth 8-3876] $readmem data file 'mbrot.hex' is read successfully [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/fetch_unit.v:92]
@@ -87,25 +87,25 @@ INFO: [Synth 8-6157] synthesizing module 'vga_control' [C:/Users/madha/OneDrive/
 INFO: [Synth 8-6155] done synthesizing module 'vga_control' (22#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/vga_control.v:25]
 INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/frame_buffer.v:21]
 INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (23#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/frame_buffer.v:21]
-INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-2508-DESKTOP-M660UKK/realtime/rgb2dvi_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (24#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-2508-DESKTOP-M660UKK/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-13020-DESKTOP-M660UKK/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (24#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/.Xil/Vivado-13020-DESKTOP-M660UKK/realtime/rgb2dvi_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'msec_timer' [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/msec_timer.v:18]
 INFO: [Synth 8-6155] done synthesizing module 'msec_timer' (25#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/msec_timer.v:18]
 INFO: [Synth 8-6155] done synthesizing module 'dvi_display' (26#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/dvi_display.v:18]
 INFO: [Synth 8-6155] done synthesizing module 'top' (27#1) [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/top.v:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1197.121 ; gain = 54.027
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1197.531 ; gain = 54.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1197.121 ; gain = 54.027
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1197.531 ; gain = 54.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1197.121 ; gain = 54.027
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1197.531 ; gain = 54.020
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1197.121 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 1197.531 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -185,20 +185,20 @@ Parsing XDC File [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-p
 Finished Parsing XDC File [C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1250.535 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1249.980 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1250.535 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1249.980 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.535 ; gain = 107.441
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1249.980 ; gain = 106.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.535 ; gain = 107.441
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1249.980 ; gain = 106.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -225,11 +225,11 @@ Applied set_property KEEP_HIERARCHY = SOFT for u_dvi_display/u_rgb2dvi. (constra
 Applied set_property KEEP_HIERARCHY = SOFT for u_video_clock_gen. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for u_cpu_clock_gen. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.535 ; gain = 107.441
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1249.980 ; gain = 106.469
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7082] The signal ps_ram_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (8 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1250.535 ; gain = 107.441
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1249.980 ; gain = 106.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -334,7 +334,7 @@ INFO: [Synth 8-7082] The signal ps_ram_reg is implemented as Block RAM but is be
 RAM Pipeline Warning: Read Address Register Found For RAM bc_ram_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM ps_ram_reg. We will not be able to pipeline it. This may degrade performance. 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1250.535 ; gain = 107.441
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1249.980 ; gain = 106.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -370,7 +370,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.535 ; gain = 107.441
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1249.980 ; gain = 106.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -426,7 +426,7 @@ INFO: [Synth 8-7052] The timing for the instance u_dvi_display/u_frame_buffer/fb
 INFO: [Synth 8-7052] The timing for the instance u_dvi_display/u_frame_buffer/fb_memory_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance u_dvi_display/u_frame_buffer/fb_memory_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1280.332 ; gain = 137.238
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1281.641 ; gain = 138.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -438,19 +438,19 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:01 . Memory (MB): peak = 1288.734 ; gain = 145.641
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1290.223 ; gain = 146.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1288.734 ; gain = 145.641
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1290.223 ; gain = 146.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1288.770 ; gain = 145.676
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1290.234 ; gain = 146.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -475,9 +475,9 @@ Report Cell Usage:
 |4     |CARRY4          |   174|
 |5     |DSP48E1         |     4|
 |9     |LUT1            |    44|
-|10    |LUT2            |   195|
-|11    |LUT3            |   601|
-|12    |LUT4            |   501|
+|10    |LUT2            |   196|
+|11    |LUT3            |   600|
+|12    |LUT4            |   502|
 |13    |LUT5            |   526|
 |14    |LUT6            |  2495|
 |15    |MUXF7           |   689|
@@ -491,26 +491,26 @@ Report Cell Usage:
 |28    |OBUFT           |     2|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1288.770 ; gain = 145.676
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1290.234 ; gain = 146.723
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:58 . Memory (MB): peak = 1288.770 ; gain = 92.262
-Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1288.770 ; gain = 145.676
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:03 . Memory (MB): peak = 1290.234 ; gain = 94.273
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1290.234 ; gain = 146.723
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1288.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1290.234 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1014 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1305.656 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1307.000 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 93c137fe
+Synth Design complete, checksum: 77faecce
 INFO: [Common 17-83] Releasing license: Synthesis
 114 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1305.656 ; gain = 162.562
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1307.000 ; gain = 163.488
 INFO: [Common 17-1381] The checkpoint 'C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 25 03:36:46 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 25 21:12:05 2021...

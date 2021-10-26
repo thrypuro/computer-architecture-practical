@@ -2,7 +2,7 @@
 
 ## Code
 
-**Alu.v  (top module)**
+**`Alu.v`  (top module)**
 
 ```verilog
 `timescale 1ns / 1ps
@@ -134,7 +134,7 @@ endmodule
 
 ### Sub modules used in the top module
 
-**Addition/Subtraction module** 
+**Addition/Subtraction module (`alu_adder.v`)** 
 
 ```verilog
 `timescale 1ns / 1ps
@@ -259,7 +259,7 @@ The summary section of the utilisation report shows the total number of LUTs use
 
 ![image-20211025180649528](Practical-writeup.assets/image-20211025180649528.png)
 
-Addition comments : 557 LUTs are not as optimised as it can be, reducing the LUTs could be done by optimising the code further, but i would not like to sacrifice the readability of the code for optimisation. 
+Addition comments : 557 LUTs are not as optimised as it can be, reducing the LUTs could be done by optimising the code further, but I would not like to sacrifice the readability of the code for optimisation. 
 
 #### Primitives
 
