@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/top.tcl"
+  variable script "/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -77,65 +79,65 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.cache/wt [current_project]
-set_property parent.project_path C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.xpr [current_project]
+set_property webtalk.parent_dir /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.cache/wt [current_project]
+set_property parent.project_path /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/repo/board_files} [current_project]
+set_property board_part_repo_paths {/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/repo/board_files} [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/repo [current_project]
+set_property ip_repo_paths /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/repo [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.cache/ip [current_project]
+set_property ip_output_repo /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/proj/CARD_P1D.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/inc/params.v
-set_property file_type "Verilog Header" [get_files C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/inc/params.v]
+read_verilog /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/inc/params.v
+set_property file_type "Verilog Header" [get_files /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/inc/params.v]
 read_mem {
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/others/deps_test.hex
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/others/mbrot.hex
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/others/deps_test.hex
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/others/mbrot.hex
 }
 read_verilog -library xil_defaultlib {
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/alu.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/alu_adder.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/alu_arith_shift_right.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/branch_cache.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/branch_predictor.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/bypass_or_stall.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/cpu.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/csr_unit.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/dccm_ram.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/decoder.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/divider.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/dvi_display.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/exec_unit.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/fetch_unit.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/frame_buffer.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/msec_timer.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/predictor_state.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/ras.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/regfile.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/resync.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/ssd_driver.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/store_queue.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/vga_control.v
-  C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/hdl/top.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/alu.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/alu_adder.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/alu_arith_shift_right.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/branch_cache.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/branch_predictor.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/bypass_or_stall.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/cpu.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/csr_unit.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/dccm_ram.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/decoder.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/divider.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/dvi_display.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/exec_unit.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/fetch_unit.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/frame_buffer.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/msec_timer.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/predictor_state.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/ras.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/regfile.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/resync.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/ssd_driver.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/store_queue.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/vga_control.v
+  /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/hdl/top.v
 }
-read_ip -quiet C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/rgb2dvi_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/src/rgb2dvi.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/src/rgb2dvi_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc]
+read_ip -quiet /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/rgb2dvi_0.xci
+set_property used_in_implementation false [get_files -all /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/src/rgb2dvi.xdc]
+set_property used_in_implementation false [get_files -all /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/src/rgb2dvi_ooc.xdc]
+set_property used_in_implementation false [get_files -all /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc]
 
-read_ip -quiet C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen.xci
-set_property used_in_implementation false [get_files -all c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen_ooc.xdc]
+read_ip -quiet /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen.xci
+set_property used_in_implementation false [get_files -all /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen_board.xdc]
+set_property used_in_implementation false [get_files -all /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen.xdc]
+set_property used_in_implementation false [get_files -all /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/video_clock_gen/video_clock_gen_ooc.xdc]
 
-read_ip -quiet C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen.xci
-set_property used_in_implementation false [get_files -all c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen_ooc.xdc]
+read_ip -quiet /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen.xci
+set_property used_in_implementation false [get_files -all /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen_board.xdc]
+set_property used_in_implementation false [get_files -all /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen.xdc]
+set_property used_in_implementation false [get_files -all /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/ip/cpu_clock_gen/cpu_clock_gen_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -146,11 +148,11 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/constraints/top.xdc
-set_property used_in_implementation false [get_files C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/constraints/top.xdc]
+read_xdc /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/constraints/top.xdc
+set_property used_in_implementation false [get_files /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/constraints/top.xdc]
 
-read_xdc C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/constraints/timing.xdc
-set_property used_in_implementation false [get_files C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/constraints/timing.xdc]
+read_xdc /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/constraints/timing.xdc
+set_property used_in_implementation false [get_files /afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/constraints/timing.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

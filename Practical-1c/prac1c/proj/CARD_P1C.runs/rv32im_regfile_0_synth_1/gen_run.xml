@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="rv32im_regfile_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1634851721">
-  <File Type="PA-TCL" Name="rv32im_regfile_0.tcl"/>
   <File Type="REPORTS-TCL" Name="rv32im_regfile_0_reports.tcl"/>
+  <File Type="PA-TCL" Name="rv32im_regfile_0.tcl"/>
+  <File Type="RDS-DCP" Name="rv32im_regfile_0.dcp"/>
   <File Type="RDS-RDS" Name="rv32im_regfile_0.vds"/>
   <File Type="RDS-UTIL" Name="rv32im_regfile_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="rv32im_regfile_0_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="rv32im_regfile_0.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/rv32im_regfile_0">
     <File Path="$PPRDIR/../src/ip/rv32im_regfile_0/rv32im_regfile_0.xci">
       <FileInfo>

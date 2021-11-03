@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/constraints/top.xdc rfile:../../../../src/constraints/top.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1d/prac1d/src/constraints/timing.xdc rfile:../../../../src/constraints/timing.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/constraints/top.xdc rfile:../../../../src/constraints/top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1d/prac1d/src/constraints/timing.xdc rfile:../../../../src/constraints/timing.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports clk_in]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

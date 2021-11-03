@@ -1,8 +1,11 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/proj/CARD_P1C.gen/sources_1/ip/rv32im_regfile_0/rv32im_regfile_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1c/prac1c/proj/CARD_P1C.gen/sources_1/ip/rv32im_regfile_0/rv32im_regfile_0_sim_netlist.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module rv32im_regfile_0
 INFO: [VRFC 10-311] analyzing module rv32im_regfile_0_regfile
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/hdl/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1c/prac1c/src/hdl/regfile.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module regfile
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/madha/OneDrive/Desktop/Github/computer-architecture-practical/Practical-1c/prac1c/src/sim/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1c/prac1c/src/sim/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1c/prac1c/proj/CARD_P1C.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [/afs/inf.ed.ac.uk/user/s19/s1902743/Desktop/Work/computer-architecture-practical/Practical-1c/prac1c/proj/CARD_P1C.sim/sim_1/behav/xsim/glbl.v:6]
